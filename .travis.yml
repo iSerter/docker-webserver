@@ -1,0 +1,6 @@
+sudo: required
+services: docker
+script:
+  - docker build -t iserter/webserver .
+after_script:
+  - docker images
